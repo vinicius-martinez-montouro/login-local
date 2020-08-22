@@ -6,8 +6,12 @@
     <string name="senha">Senha</string>
     <string name="hint_senha">Digite a senha</string>
     <string name="logar">Logar</string>
+
     <string name="key_usuario">USUARIO</string>
     <string name="key_senha">SENHA</string>
+    <string name="key_lembrar">LEMBRAR</string>
+    <string name="key_usuarios_db">USERS</string>
+
     <string name="user_default">viniciusmontouro@ifsp.edu.br</string>
     <string name="passwd_default">password</string>
     <string name="bem_vindo_msg">Bem vindo usuário</string>

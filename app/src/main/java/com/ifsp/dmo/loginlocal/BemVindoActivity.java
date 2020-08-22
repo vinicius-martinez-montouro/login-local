@@ -17,6 +17,8 @@ public class BemVindoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i(getString(R.string.tag), "Classe: " + getClass().getSimpleName() +
+                "| Método : onCreate()");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bem_vindo);
 
