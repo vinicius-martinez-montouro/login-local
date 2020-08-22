@@ -38,10 +38,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         lembrarCheckBox = findViewById(R.id.checkbox_lembrar);
         novoUsuarioTextView = findViewById(R.id.textview_novo);
         logarButton.setOnClickListener(this);
+        novoUsuarioTextView.setOnClickListener(this);
 
         //Vamos instanciar as preferencias em modo privado, ou seja, somente acessíveis
         // ao próprio app.
         mSharedPreferences = this.getPreferences(MODE_PRIVATE);
+        //mSharedPreferences = this.getSharedPreferences(getString(R.string.file_preferences), MODE_PRIVATE);
         mEditor = mSharedPreferences.edit();
     }
 
@@ -101,6 +103,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             //os dados de login para outros acessos.
             salvaPreferencias();
             abrirBoasVindas();
+            return;
+        }
+        if(view == novoUsuarioTextView){
+            Intent in = new Intent(this, NovoUsuarioActivity.class);
+            startActivity(in);
             return;
         }
     }
